@@ -10,7 +10,7 @@ const sdk = ThirdwebSDK.fromPrivateKey(process.env.PRIVATE_KEY, "optimism-goerli
 
 const addNFTs = async () => {
   const drop = await sdk.getContract(
-    "0xaeF26Ac15B1C54Df0493782d62f0316e94E9fC88",
+    "0x3731E75d0074D49B114262f55C92409Ec77c1C48",
     "nft-drop"
   );
 
