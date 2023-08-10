@@ -17,7 +17,16 @@ const addNFTs = async () => {
   try {
     await drop.createBatch([
       "https://my-json-server.typicode.com/megodseth/nft-test/nfts/0",
-      "https://my-json-server.typicode.com/megodseth/nft-test/nfts/1",
+        "https://my-json-server.typicode.com/megodseth/nft-test/nfts/1",
+        "https://my-json-server.typicode.com/megodseth/nft-test/nfts/2",
+        "https://my-json-server.typicode.com/megodseth/nft-test/nfts/3",
+        "https://my-json-server.typicode.com/megodseth/nft-test/nfts/4",
+        "https://my-json-server.typicode.com/megodseth/nft-test/nfts/5",
+        "https://my-json-server.typicode.com/megodseth/nft-test/nfts/6",
+        "https://my-json-server.typicode.com/megodseth/nft-test/nfts/7",
+        "https://my-json-server.typicode.com/megodseth/nft-test/nfts/8",
+        "https://my-json-server.typicode.com/megodseth/nft-test/nfts/9",
+      "https://my-json-server.typicode.com/megodseth/nft-test/nfts/10",
     ]);
     console.log("uploaded all nfts");
   } catch (error) {
