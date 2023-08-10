@@ -3,7 +3,10 @@ import { config } from "dotenv";
 
 config();
 
-const sdk = ThirdwebSDK.fromPrivateKey(process.env.PRIVATE_KEY, "optimism-goerli");
+const sdk = ThirdwebSDK.fromPrivateKey(process.env.PRIVATE_KEY, "optimism-goerli", {
+    clientId: "cc9ff2e1fb69e17286d3c6786395884c",
+    secretKey: "0XVDCOkRPaWGDEMSH4ihkHUsRoefmDFSy3iXwrh6amEofRKLowvEeWiYS_Mvql7cQs3QRYGrNdDz3bzCWBhc3Q",
+});
 
 const addNFTs = async () => {
   const drop = await sdk.getContract(
@@ -13,8 +16,8 @@ const addNFTs = async () => {
 
   try {
     await drop.createBatch([
-      "https://my-json-server.typicode.com/thirdweb-dev/updatable-nft-metadata/nfts/0",
-      "https://my-json-server.typicode.com/thirdweb-dev/updatable-nft-metadata/nfts/1",
+      "https://my-json-server.typicode.com/megodseth/nft-test/nfts/0",
+      "https://my-json-server.typicode.com/megodseth/nft-test/nfts/1",
     ]);
     console.log("uploaded all nfts");
   } catch (error) {
